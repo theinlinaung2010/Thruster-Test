@@ -1,0 +1,34 @@
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.csprojResolveAssemblyReference.cache
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\App.baml
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\App.g.cs
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test_MarkupCompile.cache
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\Thruster Test.exe.config
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\Thruster Test.exe
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\Thruster Test.pdb
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.dll
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\MaterialDesignColors.dll
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.pdb
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.xml
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\MainWindow.baml
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\MainWindow.g.cs
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.g.resources
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster_Test.Properties.Resources.resources
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.csproj.GenerateResource.Cache
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.exe
+C:\Users\Thein Lin Aung\Documents\Visual Studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.pdb
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\CommandMessenger.dll
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\CommandMessenger.Transport.Serial.dll
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\DataAnalysisWindow.baml
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\DataAnalysisWindow.g.cs
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\LiveCharts.Geared.dll
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\Thruster Test.exe.manifest
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\bin\Debug\Thruster Test.application
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.TrustInfo.xml
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.exe.manifest
+C:\Users\Thein Lin Aung\documents\visual studio 2012\Projects\Thruster Test\Thruster Test\obj\Debug\Thruster Test.application

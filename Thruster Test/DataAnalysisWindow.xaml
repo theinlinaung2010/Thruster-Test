@@ -1,0 +1,105 @@
+﻿<Window x:Class="Thruster_Test.DataAnalysisWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lvp="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Data Analysis" Height="580" Width="1080"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+		FontFamily="Roboto" WindowState="Maximized" Loaded="Window_Loaded" Icon="Propeller.ico">
+    <Window.Resources>
+        <materialDesign:PackIcon x:Key="StartIcon" Kind="Play" Height="30" Width="30"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:Card Margin="6,5,2.6,3.4" VerticalAlignment="Stretch" Padding="0" Grid.RowSpan="4">
+            <lvp:CartesianChart x:Name="mChart" Margin="10" Padding="3,0,0,3">
+                <lvp:CartesianChart.AxisY>
+                    <lvp:Axis Foreground="#FF909090" MinRange="-1E+100"/>
+                </lvp:CartesianChart.AxisY>
+                <lvp:CartesianChart.AxisX>
+                    <lvp:Axis Foreground="#FF898989" MinRange="-1E+100" MaxRange="1E+100"/>
+                </lvp:CartesianChart.AxisX>
+            </lvp:CartesianChart>
+        </materialDesign:Card>
+        <materialDesign:Card Margin="3.4,5,4.6,3" VerticalAlignment="Stretch" Padding="0" Grid.Column="1" Background="#FFFFE85A">
+            <Grid Margin="0,0,-0.4,-0.2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="40*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+                <ComboBox x:Name="CBX" Margin="10,0,7.8,0" VerticalAlignment="Center" SelectedIndex="1" DropDownClosed="CBX_DropDownClosed" SelectionChanged="CBX_SelectionChanged">
+                    <ComboBoxItem Content="Time"/>
+                    <ComboBoxItem Content="Throttle"/>
+                    <ComboBoxItem Content="Voltage"/>
+                    <ComboBoxItem Content="Current"/>
+                    <ComboBoxItem Content="RPM"/>
+                    <ComboBoxItem Content="Thrust"/>
+                </ComboBox>
+                <ComboBox x:Name="CBY" Margin="10.2,0,9.6,0" VerticalAlignment="Center" Grid.Column="2" SelectionChanged="CBY_SelectionChanged" DropDownClosed="CBY_DropDownClosed"/>
+                <Label Content="VS" Grid.Column="1" Margin="0" VerticalAlignment="Center" HorizontalContentAlignment="Center"/>
+                <ComboBox x:Name="CBChartType" Margin="10,9.8,9.6,9.4" VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="3" SelectedIndex="0" SelectionChanged="CBChartType_SelectionChanged">
+                    <ComboBoxItem Content="Scatter plot"/>
+                    <ComboBoxItem Content="Histogram"/>
+                </ComboBox>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card Margin="3.4,3,4.6,2.8" VerticalAlignment="Stretch" Padding="0" Grid.Column="1" Grid.Row="1" Background="#FF64FFDA">
+            <Grid Margin="0,0,0.4,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="40*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="21*"/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="TBStart" Margin="10,0,10.2,0" TextWrapping="Wrap" Text="1" Height="23" VerticalAlignment="Center" HorizontalContentAlignment="Center" TextChanged="TBStart_TextChanged"/>
+                <TextBox x:Name="TBEnd" Margin="10,0" TextWrapping="Wrap" Text="20" Grid.Column="2" HorizontalContentAlignment="Center" Height="23" VerticalAlignment="Center" TextChanged="TBEnd_TextChanged"/>
+                <Label Content="&lt; x &lt;" Margin="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" FontSize="16" Grid.Column="1"/>
+                <UniformGrid Grid.ColumnSpan="3" Margin="0,0,0.4,-0.4" Grid.Row="1" Rows="6" Columns="2">
+                    <Label Content="SAMPLES" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    <Label x:Name="LBLSamples" Content="500" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                    <Label Content="MAX" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    <Label x:Name="LblMax" Content="2.6" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                    <Label Content="MIN" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    <Label x:Name="LblMin" Content="0.2" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                    <Label Content="RANGE" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    <Label x:Name="LblRange" Content="2.4" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                    <Label Content="AVERAGE" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                    <Label x:Name="LblAvg" Content="2.2" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                    <Label Content="SD" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Padding="5"/>
+                    <Label x:Name="LblSD" Content="0.5" VerticalContentAlignment="Center" Padding="5" HorizontalContentAlignment="Right" HorizontalAlignment="Left"/>
+                </UniformGrid>
+            </Grid>
+        </materialDesign:Card>
+        <materialDesign:Card Margin="3.4,3.2,4.6,5" VerticalAlignment="Stretch" Padding="0" Grid.Column="1" Grid.Row="2" Background="#FFC2A1FF">
+            <TextBlock x:Name="TBNotes" TextWrapping="Wrap" Margin="10,10,6.8,7.8"/>
+        </materialDesign:Card>
+        <UniformGrid Margin="0" Grid.Row="3" Columns="2" Rows="1" Grid.Column="1">
+            <Button x:Name="BtnReturn" Margin="30,0,0,0" VerticalAlignment="Center" Height="60" Style="{DynamicResource MaterialDesignFloatingActionButton}" Width="60" RenderTransformOrigin="1.148,0.414" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Click="BtnReturn_Click" ToolTip="Return">
+                <materialDesign:PackIcon Kind="KeyboardBackspace" Height="30" Width="30"/>
+            </Button>
+            <Button x:Name="BtnLoad" Margin="0,0,30,0" VerticalAlignment="Center" Height="60" Style="{DynamicResource MaterialDesignFloatingActionAccentButton}" Width="60" RenderTransformOrigin="1.148,0.414" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Click="BtnLoad_Click" ToolTip="Load">
+                <materialDesign:PackIcon Kind="File" Height="30" Width="30"/>
+            </Button>
+        </UniformGrid>
+    </Grid>
+</Window>
